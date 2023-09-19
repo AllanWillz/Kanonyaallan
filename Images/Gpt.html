@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technology Institute</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Header */
+      header {
+        background-color: #4285f4;
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .hero {
+        background-image: url("hero-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #ff5722;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #ff7043;
+      }
+
+      /* Features */
+      .features {
+        padding: 80px 0;
+        text-align: center;
+        background-color: #f8f8f8;
+      }
+
+      .features h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #333;
+      }
+
+      .feature {
+        display: inline-block;
+        width: 300px;
+        margin: 0 20px;
+      }
+
+      .feature img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .feature h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .feature p {
+        font-size: 16px;
+        color: #777;
+      }
+
+      /* Courses */
+      .courses {
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .courses h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #333;
+      }
+
+      .course {
+        display: inline-block;
+        width: 300px;
+        margin: 0 20px;
+      }
+
+      .course img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+
+      .course h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .course p {
+        font-size: 16px;
+        color: #777;
+      }
+
+      /* Testimonials */
+      .testimonials {
+        padding: 80px 0;
+        text-align: center;
+        background-color: #e9e9e9;
+      }
+
+      .testimonials h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #333;
+      }
+
+      .testimonial {
+        display: inline-block;
+        width: 300px;
+        margin: 0 20px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      blockquote {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      cite {
+        font-size: 16px;
+        font-style: italic;
+        color: #777;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-content p {
+        margin: 0;
+      }
+
+      .social-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .social-links li {
+        margin-left: 10px;
+      }
+
+      .social-links img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Technology Institute</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to the Technology Institute</h1>
+          <p>Unlock your potential in the world of technology</p>
+          <a href="#" class="cta-btn">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature">
+        <img src="icon1.png" alt="Feature 1" />
+        <h3>Expert Faculty</h3>
+        <p>Learn from experienced professionals in the field.</p>
+      </div>
+      <div class="feature">
+        <img src="icon2.png" alt="Feature 2" />
+        <h3>State-of-the-Art Facilities</h3>
+        <p>Access cutting-edge technology and equipment.</p>
+      </div>
+      <div class="feature">
+        <img src="icon3.png" alt="Feature 3" />
+        <h3>Industry Connections</h3>
+        <p>Connect with leading tech companies and potential employers.</p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <h2>Popular Courses</h2>
+      <div class="course">
+        <img src="course1.jpg" alt="Course 1" />
+        <h3>Web Development</h3>
+        <p>Learn to build modern websites and web applications.</p>
+      </div>
+      <div class="course">
+        <img src="course2.jpg" alt="Course 2" />
+        <h3>Data Science</h3>
+        <p>Master data analysis and machine learning techniques.</p>
+      </div>
+      <div class="course">
+        <img src="course3.jpg" alt="Course 3" />
+        <h3>Cybersecurity</h3>
+        <p>Protect digital assets and defend against cyber threats.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Student Testimonials</h2>
+      <div class="testimonial">
+        <img src="testimonial1.jpg" alt="Testimonial 1" />
+        <blockquote>
+          "The Technology Institute provided me with the skills and knowledge to
+          excel in the tech industry. The experienced faculty and hands-on
+          approach helped me secure my dream job."
+        </blockquote>
+        <cite>- John Doe</cite>
+      </div>
+      <div class="testimonial">
+        <img src="testimonial2.jpg" alt="Testimonial 2" />
+        <blockquote>
+          "I highly recommend the Technology Institute for anyone looking to
+          kickstart their career in technology. The supportive learning
+          environment and practical projects made all the difference."
+        </blockquote>
+        <cite>- Jane Smith</cite>
+      </div>
+      <div class="testimonial">
+        <img src="testimonial3.jpg" alt="Testimonial 3" />
+        <blockquote>
+          "I'm grateful for the hands-on experience and networking opportunities
+          I gained at the Technology Institute. It opened doors for me and
+          helped me grow both professionally and personally."
+        </blockquote>
+        <cite>- Mark Johnson</cite>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Technology Institute. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPTI</title>
+    <link rel="stylesheet" href="./Upti.css" />
+    <!-- <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.min.css" /> -->
+    <script src="./Upti.js" defer></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+    "></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHx1T4dZvn03J4zV2Yr3jSBJyAz0o1is&libraries=places"></script>
+  </head>
+  <body>
+    <nav id="home" class="navbar">
+      <div class="brand-title">
+        <img
+          width="200px"
+          src="./Images/2fa164_e84d868ce54b424aaec4445513616399~mv2.png"
+          alt=""
+        />
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li style="font-size: 20px"><a href="#home">Home</a></li>
+          <li style="font-size: 20px">
+            <a href="#our_services">Services</a>
+          </li>
+          <li style="font-size: 20px">
+            <a href="#about_us">About Us</a>
+          </li>
+          <li style="font-size: 20px">
+            <a href="#registration_form"
+              ><button class="joinBtn"><i>Join Us</i></button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="homeVideo" style="height: 690px">
+      <div class="videoTextDiv">
+        <div class="content">
+          <h1 style="padding: 10px">
+            <b style="background-color: #000000"
+              >UGANDA POLYMATH TECHNICAL INSTITUTE</b
+            >
+          </h1>
+        </div>
+        <div class="contentTwo">
+          <h3 style="font-size: 40px; background-color: #000">
+            <i>One of the best Training Institutes in Uganda</i>
+          </h3>
+        </div>
+        <div class="buttonContent">
+          <button style="border-radius: 5px" class="start">Get Started</button>
+        </div>
+      </div>
+      <video
+        id="comp-ldjyd5jw_video"
+        class="K8MSra position-relative"
+        role="presentation"
+        crossorigin="anonymous"
+        playsinline=""
+        preload="auto"
+        muted=""
+        loop=""
+        tabindex="-1"
+        autoplay=""
+        src="https://video.wixstatic.com/video/11062b_cca29298dbe547f4983e127aba1c1966/1080p/mp4/file.mp4"
+        style="
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+          opacity: 1;
+        "
+      ></video>
+    </div>
+
+    <!-- Services Section -->
+    <div id="our_services" class="services">
+      <h1 style="text-align: center; font-size: 50px">OUR SERVICES</h1>
+      <div class="containerImage-Div">
+        <div class="serviceImages">
+          <img
+            src="https://static.wixstatic.com/media/71942f_f1fb2f610bce4945a4cb953c061be17d~mv2.jpg/v1/crop/x_0,y_0,w_563,h_408/fill/w_370,h_266,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_f1fb2f610bce4945a4cb953c061be17d~mv2.jpg"
+            alt=""
+            width="500"
+            height="300"
+            class="responsive"
+          />
+          <div class="service_textDiv">
+            <p class="serviceText">
+              Our Technology classes are <br />
+              covered with coding and <br />
+              programming.......<span style="color: blue">Click here</span>
+            </p>
+          </div>
+        </div>
+        <div class="serviceImages">
+          <img
+            src="https://static.wixstatic.com/media/71942f_ffa83773d7aa40be8ff7915121683428~mv2.jpg/v1/fill/w_397,h_261,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_ffa83773d7aa40be8ff7915121683428~mv2.jpg"
+            alt=""
+            width="500"
+            height="300"
+            class="responsive"
+          />
+          <div class="service_textDiv">
+            <p class="serviceText">
+              Our Business classes are <br />
+              covered with website designing, <br />
+              Marketing and Illustrator <br />
+              designs....<span style="color: blue">Click here</span>
+            </p>
+          </div>
+        </div>
+        <div class="serviceImages">
+          <img
+            src="https://static.wixstatic.com/media/71942f_cf8f265dbcc84ea5921759c9361e4a27~mv2.jpg/v1/crop/x_213,y_0,w_4539,h_3168/fill/w_355,h_245,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_cf8f265dbcc84ea5921759c9361e4a27~mv2.jpg"
+            alt=""
+            class="responsive"
+            width="500"
+            height="400"
+          />
+          <div class="service_textDiv">
+            <p class="serviceText">
+              Our Bible classes are covered with <br />
+              all Chapters and rightfull <br />
+              interpretation of Bible....<span style="color: blue"
+                >Click here</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+
+    <div id="about_us" class="aboutUs">
+      <!-- <img
+        src="https://static.wixstatic.com/media/11062b_c567795db2214629b5de847016de542f~mv2.jpeg/v1/fill/w_1549,h_1631,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/11062b_c567795db2214629b5de847016de542f~mv2.jpeg"
+        alt="Abstract Blue Light"
+        style="
+          width: 1549px;
+          height: 1631px;
+          object-fit: cover;
+          object-position: 50% 50%;
+        "
+        fetchpriority="high"
+      /> -->
+      <div class="aboutText">
+        <h1 class="about">ABOUT US</h1>
+      </div>
+      <div class="aboutDiv_Section">
+        <div class="firstDiv">
+          <p style="font-family: sans-serif">
+            <b
+              >At UPTI, our comprehensive technological solutions help
+              individuals and other Institutes achieve greater success. Our
+              platform has a wide range of features that were created to help
+              you live differently. To empower our students to do better, UPTI
+              is continually building upon its technology, so stay in touch to
+              learn more about upgrades in the World and other changes.</b
+            >
+          </p>
+        </div>
+        <div class="secondDiv">
+          <p style="font-family: sans-serif">
+            <b
+              >UPTI began in 2022 with a vision of providing job ready web
+              developers to industry through hyper- relevant education and
+              training. The model for UPTI is predicated on close, ongoing
+              relationships with local and international organizations that
+              invest in the school through consultation, mentorship and
+              financial sponsorship. The commitment from UPTI is to find new and
+              underutilized talent for the technology sector through a rigorous
+              education.....</b
+            >
+          </p>
+        </div>
+      </div>
+      <!-- <div class="readButton">
+        <button class="readMore-button">Read More</button>
+      </div> -->
+    </div>
+
+    <div class="memberText">
+      <h1>MEMBERS</h1>
+    </div>
+    <div class="membersDiv">
+      <div class="allan">
+        <img
+          class="memberImages"
+          src="https://static.wixstatic.com/media/71942f_324e16837ca847059cffbc0b7ddb1cc1~mv2.jpg/v1/fill/w_287,h_287,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_324e16837ca847059cffbc0b7ddb1cc1~mv2.jpg"
+          alt=""
+        />
+        <div class="initials">
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            Mr.Allan K.W
+          </p>
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            UPTI STUDENT
+          </p>
+        </div>
+      </div>
+      <div class="edgar">
+        <img
+          class="memberImages"
+          src="https://static.wixstatic.com/media/71942f_73e0bac1d8114c86b59fcbac43fd99d6~mv2.jpg/v1/fill/w_287,h_287,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_73e0bac1d8114c86b59fcbac43fd99d6~mv2.jpg"
+          alt=""
+        />
+        <div class="initials">
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            Mr.Edgar E.W
+          </p>
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            UPTI STUDENT
+          </p>
+        </div>
+      </div>
+      <div class="sam">
+        <img
+          class="memberImages"
+          src="https://static.wixstatic.com/media/71942f_f95ffef0f46f4873b9a8916a0c8cc26c~mv2.jpg/v1/fill/w_287,h_287,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_f95ffef0f46f4873b9a8916a0c8cc26c~mv2.jpg"
+          alt=""
+        />
+        <div class="initials">
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            Mr.Samuel K
+          </p>
+          <p
+            style="font-size: 20px; font-weight: bold; font-family: sans-serif"
+          >
+            UPTI STUDENT
+          </p>
+        </div>
+      </div>
+      <div class="sharon">
+        <img
+          class="memberImages"
+          src="https://static.wixstatic.com/media/71942f_8fbd3c1df1164df5b795582d33d73484~mv2.jpg/v1/fill/w_287,h_287,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/71942f_8fbd3c1df1164df5b795582d33d73484~mv2.jpg"
+          alt=""
+        />
+        <div class="initials">
+          <div class="name">
+            <p
+              style="
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+              "
+            >
+              Mrs.Sharon R.SS
+            </p>
+          </div>
+          <div class="role">
+            <p
+              style="
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+              "
+            >
+              UPTI STUDENT
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form Section -->
+    <section id="registration_form" class="main_form-Div">
+      <div class="form_div">
+        <video
+          style="width: 50%; height: 450px"
+          id="comp-ldjyc7s71_video"
+          class="K8MSra"
+          role="presentation"
+          crossorigin="anonymous"
+          playsinline=""
+          preload="auto"
+          muted=""
+          loop=""
+          tabindex="-1"
+          autoplay=""
+          src="https://video.wixstatic.com/video/11062b_0f31ef71be4e4593bfcdc5a4d4baba11/720p/mp4/file.mp4"
+        ></video>
+        <!-- <div style="width: 40%" class="registerForm_text"> -->
+        <!-- <div class="first-div"> -->
+        <!-- <h1 class="register">REGISTER WITH UPTI AND GET STARTED</h1> -->
+        <!-- </div> -->
+        <!-- <div class="second-div"> -->
+        <!-- <h1
+              class="register"
+              style="
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid #fff;
+                width: 30%;
+              "
+            >
+              STARTED
+            </h1> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+      <form action="https://mail.google.com/mail/u/0/" class="formdiv">
+        <div class="nameAnd_email">
+          <div>
+            <label for="fname">Name</label>
+            <input
+              type="text"
+              id="fname"
+              placeholder="Enter your name........"
+              style="
+                height: 90px;
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+              "
+              required
+            />
+          </div>
+          <div>
+            <label for="mail">Email</label>
+            <input
+              type="text"
+              id="mail"
+              placeholder="Enter your Email........"
+              style="
+                height: 90px;
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+              "
+              required
+            />
+          </div>
+        </div>
+        <div class="phoneAnd_address">
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number........"
+              style="
+                height: 90px;
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+              "
+              required
+            />
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="Enter your address........"
+              style="
+                height: 90px;
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+              "
+              required
+            />
+          </div>
+        </div>
+        <div class="commentDiv">
+          <input
+            type="text"
+            placeholder="Leave a comment........"
+            style="
+              height: 90px;
+              width: 100%;
+              border-top: none;
+              border-left: none;
+              border-right: none;
+            "
+            required
+          />
+        </div>
+        <div class="formButton_div">
+          <button
+            type="submit"
+            value="Submit"
+            class="submit"
+            style="
+              width: 100%;
+              height: 60px;
+              border: none;
+              background-color: #fff;
+              color: #000;
+              font-size: 15px;
+              font-weight: bold;
+            "
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7193227473203!2d32.5503121!3d0.40362149999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db156220960b1%3A0xc680fbb9764563df!2sUganda%20polymath%20technical%20institute%20UPTI!5e0!3m2!1sen!2sug!4v1685963529048!5m2!1sen!2sug"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="footerDiv">
+      <div class="heading_one">
+        <h1 style="text-align: center">
+          FOR MORE INFORMATION PLEASE VISIT US BELOW
+        </h1>
+      </div>
+      <div class="small-heading">
+        <div class="firstSection">
+          <h2>Contact Us</h2>
+          <p>+256 757-330-656</p>
+          <p>+256 778-759-007</p>
+        </div>
+        <div class="secondSection">
+          <h2>Courses Provided</h2>
+          <p>
+            <i style="font-size: 40px" class="fa-solid fa-caret-right"></i>
+            Programming & Software development
+          </p>
+          <p>
+            <i style="font-size: 40px" class="fa-solid fa-caret-right"></i>
+            Business and website development
+          </p>
+          <p>
+            <i style="font-size: 40px" class="fa-solid fa-caret-right"></i>
+            Bible Study
+          </p>
+        </div>
+        <div class="thirdSection">
+          <h2>Join Us</h2>
+          <div class="icons">
+            <div class="twitter">
+              <i style="font-size: 40px" class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="instagram">
+              <i
+                style="font-size: 40px"
+                class="fa-brands fa-square-instagram"
+              ></i>
+            </div>
+            <div class="facebook">
+              <i style="font-size: 40px" class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lastCopyRight">
+        <div class="arrow">
+          <a href="#home">
+            <i
+              style="font-size: 40px; color: #000"
+              class="fa-solid fa-circle-up"
+            ></i>
+          </a>
+        </div>
+        <div class="copyRight">
+          <p>
+            <i
+              >©2023 by UPTI. Proudly created with Odyssey Technologies
+              Uganda</i
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
